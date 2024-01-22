@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>TerraBook</title> 
+    <style>        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 50px;
+        }
+        nav {
+            background-color: #b3a492;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        fieldset {
+            width: 300px;
+            margin: auto;
+            margin-top: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        #JendelaBaca {
+            font-size: 40px; 
+            font-family: 'Arial', sans-serif; 
+            color: #f2f2f2;
+        }
+    </style>
+</head> 
+<body> 
+    <nav>
+        <div id="JendelaBaca">Jendela Baca</div>
+        <a href="Admin.php">Kembali </a>
+    </nav>
+    <!--membungkus tampilan Read Data--> 
+    <fieldset > 
+        <!--Judul pada fieldset--> 
+        <legend align="center">Input Data Buku</legend> 
+     
+        <!--Tampulam Form Input Data--> 
+        <form action="tambah_proses.php" method="post"> 
+     
+            <input type="text" name="id_buku" placeholder="ID Buku" size="40px"> 
+            <br><br> 
+            <input type="text" name="kategori" placeholder="Kategori" size="40px"> 
+            <br><br> 
+            <input type="text" name="nama_buku" placeholder="Nama Buku" size="40px"> 
+            <br><br> 
+            <input type="text" name="harga" placeholder="Harga" size="40px"> 
+            <br><br> 
+            <input type="text" name="stok" placeholder="Stok" size="40px"> 
+            <br><br> 
+            <input type="text" name="penerbit" placeholder="Penerbit" size="40px"> 
+            <br><br> 
+            
+            <button type="submit" name="submit">SIMPAN</button> 
+            <button type="reset" name="reset">RESET</button> 
+        </form> 
+    </fieldset> 
+</body> 
+</html>
